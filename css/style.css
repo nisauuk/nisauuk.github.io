@@ -1,4 +1,10 @@
 /* Base */
+@media screen and (max-width:960px){
+	#container{
+		width:100%;
+	}
+}
+
 body {
   line-height: 1.7;
   color: #4d4d4d;
