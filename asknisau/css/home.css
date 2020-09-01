@@ -1,0 +1,61 @@
+#containera{
+	width:1500px;
+	margin:0px auto;
+	}
+	
+#cola{
+	width:250px;
+	float:left;
+	}
+
+#colb{
+	width:250px;
+	float:left;
+	}
+	
+#colc{
+	width:250px;
+	float:left;
+	padding:10px;
+	}
+#cold{
+	width:250px;
+	float:left;
+	padding:10px;
+	}
+	
+@media screen and (max-width:1499px){
+	#containera{
+		width:100%;
+	}
+	#cola{
+		width:25%;
+	}
+	#colb{
+		width:25%;
+	}
+	#colc{
+		width:25%;
+	}
+	#cold{
+		width:25%;
+	}
+}
+
+@media screen and (max-width:600px){
+	#containera{
+		width:100%;
+	}
+	#cola{
+		width:100%;
+	}
+	#colb{
+		width:100%;
+	}
+	#colc{
+		width:100%;
+	}
+	#cold{
+		width:100%;
+	}
+}
