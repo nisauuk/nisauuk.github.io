@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NISAU Survey Form</title>
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700" rel="stylesheet">
+	<meta name=”viewport” content=”width=device-width, initial-scale=1″>
+	<style>
+	/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.radiomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .radiomark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiomark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .radiomark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .radiomark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+	
+	
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+	  font-weight: 300;
+      font-size: 18px;
+      line-height: 22px;
+	  align: justify;
+      }
+		h1 {color: #012261;}
+				h5 {
+	  font-size: 18px;
+      color: #012261;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 3px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 5px #ccc; 
+      }
+      input {
+	  font-size: 18px;
+      width: calc(60%);
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      vertical-align: middle;
+      }
+      input:hover, textarea:hover {
+      outline: none;
+      border: 1px solid #095484;
+      }
+      .first-name {
+      margin-bottom: 22px;
+      }
+      span {
+      color: red;
+      }
+      th, td {
+	  font-size: 18px;
+      width: 5%;
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+      vertical-align: unset;
+      line-height: 18px;
+      font-weight: 400;
+      word-break: break-all;
+      }
+      .first-col {
+      width: 16%;
+      text-align: left;
+      }
+      table {
+	  font-size: 18px;
+      width: 60%;
+	  text-align: left;
+      }
+      textarea {
+      width: calc(100% - 6px);
+      }
+      .btn-block {
+      margin-top: 20px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      -webkit-border-radius: 5px; 
+      -moz-border-radius: 5px; 
+      border-radius: 5px; 
+      background-color: #095484;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background-color: #0666a3;
+      }
+      @media (min-width: 568px) {
+      th, td {
+      word-break: keep-all;
+      }
+      }
+    </style>
+	</head>
+  <body>
+    <div class="testbox">
+        
+		<!--Introduction-->
+		<center>
+		<a href="https://www.nisau.org.uk" target="_blank"><img src="\img\NISAU_logo.png" width="80%" height="20%"></a>
+		<br><br>
+		<h1 style="color:#012261;font-family:Open Sans;line-height:1.2">Indian Students' Experiences of using<br>Agents for the UK Universities</h1>
+        <p style="padding: 10px 10px 10px 10px;width:750px;height:230px;font-family:Open Sans;background-color:#cee5fa" align=justify>The UK is a popular destination for Indian students. At the National Indian Students and Alumni Union UK, we believe that Indian students and Britain make for a winning partnership. It is our understanding that many students use 'educational agents' or 'counsellors' who may be appointed by British universities to support their applications for studying in the UK. Consequently we wish to ascertain students' experiences of using such third party services so that we can better understand their concerns and requirements.<br><br>Participants have the chance to win Amazon vouchers of the value of GBP 10, 30 and 50. Please submit your contact details at the end of the survey if you wish to participate. By entering the survey you give us consent to use your responses as part of our research. </p><br><br>
+		
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeidNW6ccvk_feLHSwuJdnkPDEPCuc9XB5Y5IFhcW6CRSsDWg/viewform?embedded=true" width="80%" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+		</center>
+		</div>
+		<br><br>
+		<footer>
+		<center>
+		<hr>
+		<a href="https://www.nisau.org.uk">www.nisau.org.uk</a> | <a href="mailto:team@nisu.org.uk">team@nisu.org.uk</a>
+		</center>
+		</footer>
+	</body>
+</html>
