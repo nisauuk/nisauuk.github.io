@@ -276,19 +276,13 @@
 
 
 
-<head>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Button Example</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
         .pdf-button {
             background-color: blue;
             color: white;
@@ -296,23 +290,18 @@
             border: none;
             cursor: pointer;
             font-size: 16px;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
         }
         .pdf-button:hover {
             background-color: darkblue;
         }
-        .pdf-button i {
-            margin-right: 8px;
-        }
     </style>
 </head>
 <body>
-    <a class="pdf-button" href="docs/NISAU's%20Privacy%20Policy.pdf" target="_blank">
+    <button class="pdf-button" onclick="window.open('docs/NISAU's Privacy Policy.pdf', '_blank')">
         <i class="fas fa-download"></i> NISAU's Privacy Policy
-    </a>
-</body>
+    </button>
+
+
 
 
 
