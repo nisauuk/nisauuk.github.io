@@ -275,13 +275,36 @@
 </div>	
   <br><br>
 	  
-<section>	  
+<!-- <section>	  
 <center>
 	<img src="images/home/notice3.jpg" width="75%" height="50%">
 </center>
 
 </section>
-	  <br><br> 
+	  <br><br> -->
+
+	  <section>     
+    <center>
+        <img id="rotatingImage" src="images/home/notice1.jpg" width="75%" height="50%">
+    </center>
+</section>
+
+<script>
+    const images = [
+        "images/home/notice1.jpg",
+        "images/home/notice2.jpg",
+        "images/home/notice3.jpg"
+    ];
+
+    let index = 0;
+    function rotateImages() {
+        index = (index + 1) % images.length; 
+        document.getElementById("rotatingImage").src = images[index];
+    }
+
+    setInterval(rotateImages, 3000); // Change image every 3 seconds
+</script>
+
 	
 
 
